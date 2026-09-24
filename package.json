@@ -1,0 +1,27 @@
+{
+  "name": "zx-acoustic-transfer",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "npm run typecheck && vite build",
+    "typecheck": "vue-tsc --noEmit -p tsconfig.app.json",
+    "test": "vitest run tests/application tests/domain",
+    "test:acoustic": "vitest run tests/acoustic",
+    "test:browser": "playwright test"
+  },
+  "dependencies": {
+    "@vitejs/plugin-vue": "6.0.1",
+    "bootstrap": "^5.3.8",
+    "pinia": "3.0.3",
+    "typescript": "5.8.3",
+    "vite": "7.1.7",
+    "vue": "3.5.42",
+    "vue-tsc": "3.3.11"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.55.0",
+    "vitest": "3.2.4"
+  }
+}
