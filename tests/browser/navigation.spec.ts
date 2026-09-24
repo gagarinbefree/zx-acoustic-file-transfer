@@ -21,7 +21,7 @@ for (const viewport of viewports) {
     await expect(page.getByText('READY', { exact: true })).toBeVisible()
 
     await page.getByRole('button', { name: 'SAVE' }).click()
-    await expect(page.getByText('SELECT FILE (MAX 1024 BYTES / 256-BYTE BLOCKS)')).toBeVisible()
+    await expect(page.getByText('SELECT FILE (MAX 4096 BYTES / 256-BYTE BLOCKS)')).toBeVisible()
     await page.getByRole('button', { name: 'BACK' }).click()
     await expect(page.getByRole('button', { name: 'LOAD' })).toBeVisible()
 

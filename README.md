@@ -18,7 +18,7 @@ The project is deliberately small, inspectable, and browser-native. It is design
 
 ## What it does
 
-- Transmits a text demo or a file up to **1024 bytes** using the browser audio output.
+- Transmits a text demo or a file up to **4 KiB (4096 bytes)** using the browser audio output.
 - Receives audio from a real microphone using the Web Audio API.
 - Uses **1200 Hz / 2400 Hz BFSK** at **100 bit/s**.
 - Acquires a transmission with an alternating PILOT and a fixed SYNC word.
@@ -89,7 +89,7 @@ Suggested measurements include volume, distance, background noise, detector conf
 
 ## Current limitations
 
-- Maximum file size: 1024 bytes.
+- Maximum file size: 4 KiB (4096 bytes).
 - Transmission rate: 100 bit/s.
 - No error correction, retry, acknowledgement, or bidirectional protocol.
 - Real-world reliability depends on device audio processing, volume, distance, room acoustics, and background noise.

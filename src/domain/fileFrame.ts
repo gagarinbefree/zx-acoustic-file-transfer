@@ -1,7 +1,7 @@
 import type { Bit } from './bits'
 
 /** Maximum payload size accepted by the current acoustic file protocol. */
-export const maximumFileBytes = 1024
+export const maximumFileBytes = 4096
 /** Number of payload bytes protected by one independent block checksum. */
 export const fileBlockPayloadBytes = 256
 const maximumNameBytes = 63

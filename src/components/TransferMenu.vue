@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import type { DiagnosticToneVisualizationState, ReceiveVisualizationState, TransferMode } from '../types/transfer'
+import { maximumFileBytes } from '../domain/fileFrame'
 
 /**
  * TransferMenu renders the typed transfer state and emits user intentions.
@@ -52,7 +53,7 @@ function displaySetting(value: number | boolean | null): string {
         <p class="text-body-secondary mb-0">The selected file is transmitted as 256-byte blocks.</p>
       </div>
       <div>
-        <label class="form-label fw-semibold" for="transfer-file">SELECT FILE (MAX 1024 BYTES / 256-BYTE BLOCKS)</label>
+        <label class="form-label fw-semibold" for="transfer-file">SELECT FILE (MAX {{ maximumFileBytes }} BYTES / 256-BYTE BLOCKS)</label>
         <input id="transfer-file" class="form-control" type="file" @change="emit('chooseFile', $event)" />
         <div class="form-text">{{ selectedFileName === null ? 'No file selected: the HELLO SPECTRUM demo will be sent.' : `Selected: ${selectedFileName}` }}</div>
       </div>
