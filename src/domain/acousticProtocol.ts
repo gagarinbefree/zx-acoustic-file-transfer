@@ -28,11 +28,11 @@ export interface AcousticProtocolConfiguration {
 }
 
 /**
- * defaultAcousticProtocolConfiguration defines a 320 ms alternating pilot and 160 ms sync word.
+ * defaultAcousticProtocolConfiguration defines a 1.28-second alternating pilot and 160 ms sync word.
  */
 export const defaultAcousticProtocolConfiguration: AcousticProtocolConfiguration = {
   symbolRate: 100,
-  pilot: Array.from({ length: 32 }, (_, index): Bit => index % 2 === 0 ? 0 : 1),
+  pilot: Array.from({ length: 128 }, (_, index): Bit => index % 2 === 0 ? 0 : 1),
   sync: [1, 1, 0, 1, 0, 0, 1, 1, 1, 0, 1, 0, 0, 1, 1, 0],
   searchPhaseDivisions: 8,
 }

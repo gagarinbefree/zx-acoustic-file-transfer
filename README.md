@@ -33,7 +33,7 @@ The project is deliberately small, inspectable, and browser-native. It is design
 PILOT → SYNC → file header → block 0 → block 1 → … → final file CRC32
 ```
 
-Each file block contains its sequence index, payload length, payload bytes, and CRC32. The receiver processes the PCM stream independently of browser audio chunk boundaries.
+Each file block contains its sequence index, payload length, payload bytes, and CRC32. A 1.28-second alternating PILOT gives real microphone paths time to acquire before the fixed SYNC word. The receiver processes the PCM stream independently of browser audio chunk boundaries.
 
 The current protocol intentionally has no ACKs, retransmissions, duplex mode, or FEC. Those are future decisions that should be based on measured real-channel behavior.
 
