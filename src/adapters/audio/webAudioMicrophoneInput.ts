@@ -26,7 +26,7 @@ export class WebAudioMicrophoneInput implements AudioInput {
     let context: AudioContext | undefined
     try {
       context = new AudioContext()
-      await context.audioWorklet.addModule('/audio-worklets/microphone-pcm-processor.js')
+      await context.audioWorklet.addModule(`${import.meta.env.BASE_URL}audio-worklets/microphone-pcm-processor.js`)
       const source = context.createMediaStreamSource(stream)
       const processor = new AudioWorkletNode(context, 'microphone-pcm-processor')
       const silentGain = context.createGain()
