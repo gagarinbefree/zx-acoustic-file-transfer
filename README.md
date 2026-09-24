@@ -1,5 +1,12 @@
 [![Tests](https://github.com/gagarinbefree/zx-acoustic-file-transfer/actions/workflows/tests.yml/badge.svg?branch=main)](https://github.com/gagarinbefree/zx-acoustic-file-transfer/actions/workflows/tests.yml)
 [![Deploy GitHub Pages](https://github.com/gagarinbefree/zx-acoustic-file-transfer/actions/workflows/deploy-pages.yml/badge.svg?branch=main)](https://github.com/gagarinbefree/zx-acoustic-file-transfer/actions/workflows/deploy-pages.yml)
+[![Vue](https://img.shields.io/badge/Vue-3.5-42b883?logo=vuedotjs&logoColor=white)](https://vuejs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.8-3178c6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Vite](https://img.shields.io/badge/Vite-7.1-646cff?logo=vite&logoColor=white)](https://vite.dev/)
+[![Bootstrap](https://img.shields.io/badge/Bootstrap-5.3-7952b3?logo=bootstrap&logoColor=white)](https://getbootstrap.com/)
+[![Vitest](https://img.shields.io/badge/Vitest-unit%20tests-6e9f18?logo=vitest&logoColor=white)](https://vitest.dev/)
+[![Playwright](https://img.shields.io/badge/Playwright-browser%20tests-45ba4b?logo=playwright&logoColor=white)](https://playwright.dev/)
+[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-live%20demo-222222?logo=githubpages&logoColor=white)](https://gagarinbefree.github.io/zx-acoustic-file-transfer/)
 
 # ZX Acoustic Transfer
 
