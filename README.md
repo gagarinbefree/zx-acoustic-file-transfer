@@ -1,7 +1,7 @@
-# ZX Acoustic Transfer
-
 [![Tests](https://github.com/gagarinbefree/zx-acoustic-file-transfer/actions/workflows/tests.yml/badge.svg?branch=main)](https://github.com/gagarinbefree/zx-acoustic-file-transfer/actions/workflows/tests.yml)
 [![Deploy GitHub Pages](https://github.com/gagarinbefree/zx-acoustic-file-transfer/actions/workflows/deploy-pages.yml/badge.svg?branch=main)](https://github.com/gagarinbefree/zx-acoustic-file-transfer/actions/workflows/deploy-pages.yml)
+
+# ZX Acoustic Transfer
 
 > **Live demo:** [Open ZX Acoustic Transfer in GitHub Pages](https://gagarinbefree.github.io/zx-acoustic-file-transfer/)
 
