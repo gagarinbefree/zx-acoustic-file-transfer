@@ -2,6 +2,8 @@
 
 > **Live demo:** [Open ZX Acoustic Transfer in GitHub Pages](https://gagarinbefree.github.io/zx-acoustic-file-transfer/)
 
+[![Tests](https://github.com/gagarinbefree/zx-acoustic-file-transfer/actions/workflows/tests.yml/badge.svg?branch=main)](https://github.com/gagarinbefree/zx-acoustic-file-transfer/actions/workflows/tests.yml)
+
 ZX Acoustic Transfer is a browser-based experiment in sending small files through sound. It uses binary frequency-shift keying (BFSK): one frequency represents `0`, another represents `1`, and the receiving browser reconstructs the file from microphone audio.
 
 The project is deliberately small, inspectable, and browser-native. It is designed as a foundation for experimenting with acoustic links before introducing higher data rates, retransmission, or forward error correction.
